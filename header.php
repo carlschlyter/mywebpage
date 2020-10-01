@@ -8,7 +8,45 @@
 <?php wp_head(); ?>
 
 </head>
+
 <body>
+
+<header>
+
+    <div class="container-fluid">
+
+        <div class="menu-wrap">
+
+            <input type="checkbox" class="toggler">
+
+                <div class="hamburger"><div></div></div>
+
+                    <div class="menu-cont">
+
+                        <div>
+        
+                            <?php 
+                                wp_nav_menu(
+
+                                    array(
+                                        'theme_location' => 'top-menu',
+                                        'menu-class' => 'top-bar'               
+                                    )
+
+                                );
+                            ?>
+
+                        </div>
+
+                    </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
 
  
     

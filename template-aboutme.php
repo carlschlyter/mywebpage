@@ -13,11 +13,15 @@ Template Name: About Me
         <div class="col-md-12">
 
             <h1> <?php the_title(); ?> </h1>    
-        
+
         </div>
+    
+    </div>
+    
+    <div class="row">
 
         <div class="col-md-6">
-        
+    
             <?php get_template_part('includes/section', 'content'); ?>
 
         </div>        
@@ -27,8 +31,8 @@ Template Name: About Me
             <p>Det här är den andra sidan</p>            
 
         </div>        
-        
-    </div>
+
+    </div>    
 
 </div>    
 

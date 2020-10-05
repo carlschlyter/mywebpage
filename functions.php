@@ -37,3 +37,7 @@ register_nav_menus(
     )
 
 );
+
+// Custom omage sizes
+add_image_size('hero-image',1920, 1080, true);
+add_image_size('hero-image-shallow', 1920, 800, true );

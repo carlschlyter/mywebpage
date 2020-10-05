@@ -21,6 +21,85 @@ body {
     padding: 0;
 }
 
+#hero-sub-container {
+    position: relative;
+    width: screen;
+    display: flex;
+    justify-content: center;
+}
+
+#welcome-message {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    top: 35%;
+    text-align: center;
+    width: screen;
+}
+
+/* Makes font size responsive */
+#welcome-message h1 {
+    font-size: min(max(1rem, 4vw), 42px);
+}
+/* Alternative ways of making font size responsive */
+/* #welcome-message h1 {
+    font-size: clamp(100%, 1rem + 2vw, 24px);
+} */
+
+
+/* @media screen and (min-width: 320px) {
+    
+    #welcome-message h1 {
+        font-size: calc(16px + 6 * ((100vw - 320px) /680));
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    
+    #welcome-message h1 {
+        font-size: 42px;
+    }
+} */
+
+/* Breathe effect on welcome message */
+@keyframes breathe_in {
+
+    from {
+        transform: scale(1.0);
+    }
+
+    to {
+         transform: scale(1.2);
+    }
+
+}
+
+@keyframes breathe_out {
+
+    from {
+        transform: scale(1.2);
+    }
+
+    to {
+         transform: scale(1.0);
+    }
+
+}
+
+#welcome-message h1:hover {
+    animation-name: breathe_in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#welcome-message h1 {
+    animation-name: breathe_out;
+    animation-duration: 1s;
+}
+
+
+
+
 
 
 

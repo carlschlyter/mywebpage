@@ -8,7 +8,7 @@
 
     </div>
 
-    <div class="row">
+    <div class="row" id="icon-row">
 
         <div class="col-md-12" id="icon-container">
             

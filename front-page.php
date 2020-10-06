@@ -8,6 +8,16 @@
 
     </div>
 
+    <div class="row">
+
+        <div class="col-md-12" id="icon-container">
+            
+            <?php get_template_part('includes/section', 'icon_bar'); ?>
+    
+        </div>
+
+    </div>
+
 </div>
 
 <?php get_footer(); ?>

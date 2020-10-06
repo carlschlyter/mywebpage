@@ -35,6 +35,7 @@ body {
     top: 37%;
     text-align: center;
     width: screen;
+    font-family: 'Indie Flower', cursive;
 }
 
 @media screen and (max-width: 320px) {

@@ -12,6 +12,15 @@ function load_css(){
     wp_register_style('menu', get_template_directory_uri() . '/css/menu.css', array(), false, 'all');
     wp_enqueue_style('menu');
 
+    wp_register_style('hero_section', get_template_directory_uri() . '/css/hero_section.css', array(), false, 'all');
+    wp_enqueue_style('hero_section');
+
+    wp_register_style('icon_section', get_template_directory_uri() . '/css/icon_section.css', array(), false, 'all');
+    wp_enqueue_style('icon_section');
+
+    wp_register_style('offers_section', get_template_directory_uri() . '/css/offers_section.css', array(), false, 'all');
+    wp_enqueue_style('offers_section');
+
 }
 add_action('wp_enqueue_scripts','load_css');
 

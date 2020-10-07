@@ -1,0 +1,38 @@
+#offers-row {
+    display: flex;
+    justify-content: center;
+}
+
+#offers-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2%;
+    margin: 0.5% 2%;
+    border: 1px lightgray solid;
+    color: black;
+}
+
+.offers-box {
+    width: 330px;
+    height: 280px;
+    /* border: 1px grey solid; */
+    padding: 0.3rem;
+    margin: 1% 0.5%;
+}
+
+.offers-box:hover {
+    box-shadow: 3px 4px thistle;
+    animation-name: breathe_in_offers;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.offers-box {
+    animation-name: breathe_out_offers;
+    animation-duration: 1s;
+}
+

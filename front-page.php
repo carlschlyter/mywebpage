@@ -18,6 +18,16 @@
 
     </div>
 
+    <div class="row" id="offers-row">
+
+        <div class="col-md-12" id="offers-container">
+    
+            <?php get_template_part('includes/section', 'offers'); ?>
+
+        </div>
+
+    </div>
+
 </div>
 
 <?php get_footer(); ?>

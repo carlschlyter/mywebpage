@@ -10,7 +10,11 @@
 
         <?php foreach($icons as $icon) : ?>
 
+            <div class="icon-box">
+
                 <img src="<?php echo $icon['icon']['sizes']['icon-image']; ?>" alt="">
+
+            </div>
 
         <?php endforeach; ?>
 

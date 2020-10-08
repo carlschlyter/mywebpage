@@ -20,6 +20,15 @@
     font-family: 'Indie Flower', cursive;
 }
 
+#welcome-text-message {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: smaller;
+    text-align: left;
+    margin-top: 3%;
+}
+
 @media screen and (max-width: 320px) {
     #welcome-message {
         top: 45%;
@@ -29,6 +38,10 @@
 /* Makes font size responsive */
 #welcome-message h1 {
     font-size: min(max(1rem, 4vw), 42px);
+}
+
+#welcome-text-message p {
+    font-size: min(max(0.4rem, 4vw), 12px);
 }
 /* Alternative ways of making font size responsive */
 /* #welcome-message h1 {
@@ -70,5 +83,11 @@
     #welcome-message h1 {
         animation-name: breathe;
         animation-duration: 3s; 
+    }
+}
+
+@media screen and (max-width: 899px) {
+    #welcome-text-message {
+        display: none;
     }
 }

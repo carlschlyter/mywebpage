@@ -18,11 +18,21 @@
 
 .offers-box {
     width: 330px;
-    height: 280px;
+    height: 330px;
     /* border: 1px grey solid; */
     padding: 0.3rem;
     margin: 1% 0.5%;
 }
+
+.image-box {
+    margin: 2% 0;
+    text-align: center;
+}
+
+.offers-box h2 {
+    text-align: center;
+}
+
 
 .offers-box:hover {
     box-shadow: 3px 4px thistle;

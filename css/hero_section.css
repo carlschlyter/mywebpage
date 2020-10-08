@@ -61,10 +61,10 @@
     animation-duration: 3s;
 }
 
-#welcome-message h1:hover {
+/* #welcome-message h1:hover {
     animation-name: breathe-in;
     animation-duration: 3s;
-}
+} */
 
 @media screen and (max-width: 767px) {
     #welcome-message h1 {

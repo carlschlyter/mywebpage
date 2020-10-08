@@ -54,3 +54,5 @@ add_image_size('hero-image',1920, 1080, true);
 add_image_size('hero-image-shallow', 1920, 800, true);
 add_image_size('hero-image-new', 2048, 800, true);
 add_image_size('icon-image', 60, 60, true);
+add_image_size('offers-image', 300, 150, true);
+

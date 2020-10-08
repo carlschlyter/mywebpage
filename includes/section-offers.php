@@ -11,9 +11,14 @@
         <?php foreach($offers as $offer) : ?>
 
             <div class="offers-box">
-                
-                <h1> <?php echo $offer['title']; ?> </h1>
+
+                <div class="image-box">
+                    <img src="<?php echo $offer['image']['sizes']['offers-image']; ?>" alt="">
+                </div>
+
+                <h2> <?php echo $offer['title']; ?> </h2>
                 <p> <?php echo $offer['description']; ?> </p>
+
 
             </div>
 

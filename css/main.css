@@ -24,7 +24,7 @@ body p {
 
 
 /* KEY FRAMES */
-/* Breathe effect */
+/* Breathe effect 1 */
 @keyframes breathe_in {
 
     from {
@@ -97,7 +97,7 @@ body p {
 
 }
 
-/* Breathe effect - mobiles */
+/* Breathe effect 2 */
 @keyframes breathe {
 
     0% {
@@ -130,6 +130,26 @@ body p {
 
 }
 
+/* Breathe effect 2 */
+@keyframes breathe_2 {
+
+    0% {
+        transform: scale(1.0);
+    }
+
+    33% {
+        transform: scale(1.2);
+    }
+
+    67% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+
+}
 
 
 

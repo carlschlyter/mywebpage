@@ -31,6 +31,12 @@ function load_js(){
 
     wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery', false, true);
     wp_enqueue_script('bootstrap');
+
+    wp_register_script('greensock', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js', array(), false, true);
+    wp_enqueue_script('greensock');
+
+    wp_register_script('main', get_template_directory_uri() . '/js/main.js', array(), false, true);
+    wp_enqueue_script('main');
 }
 add_action('wp_enqueue_scripts', 'load_js');
 

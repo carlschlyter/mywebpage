@@ -28,6 +28,16 @@
 
     </div>
 
+    <div class="row" id="contact-form">
+
+        <div class="col-md-12" id="contact-container">
+
+            <?php get_template_part('includes/section', 'contact'); ?>
+
+        </div>
+
+    </div>
+
 </div>
 
 <?php get_footer(); ?>

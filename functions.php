@@ -21,6 +21,9 @@ function load_css(){
     wp_register_style('offers_section', get_template_directory_uri() . '/css/offers_section.css', array(), false, 'all');
     wp_enqueue_style('offers_section');
 
+    wp_register_style('contact_section', get_template_directory_uri() . '/css/contact_section.css', array(), false, 'all');
+    wp_enqueue_style('contact_section');
+
 }
 add_action('wp_enqueue_scripts','load_css');
 
@@ -55,10 +58,64 @@ register_nav_menus(
 
 );
 
-// Custom omage sizes
+// Custom image sizes
 add_image_size('hero-image',1920, 1080, true);
 add_image_size('hero-image-shallow', 1920, 800, true);
 add_image_size('hero-image-new', 2048, 800, true);
 add_image_size('icon-image', 60, 60, true);
 add_image_size('offers-image', 300, 150, true);
+
+//Contact form
+add_action('wp_ajax_contact', 'contact_form');
+add_action('wp_ajax_nopriv_contact', 'contact_form');
+
+function contact_form(){
+
+    $formdata = [];
+
+    wp_parse_str($_POST['contact'], $formdata);
+
+    //The sender of the email i.e. the admin email
+    $admin_email = get_option('admin_email');
+
+    //Email headers
+    $headers[] = 'Content-Type: text/html; charset=utf-8';
+    $headers[] = 'Från' . $admin_email;
+    $headers[] = 'Svara till' . $formdata['E-post'];
+
+    //The recipient of the email
+    $send_to = $admin_email;
+
+    //Subject
+    $subject = 'Meddelande från ' . $formdata['Förnamn'] . '' . $formdata['Efternamn'];
+
+    //Message
+    $message = '';
+
+    foreach($formdata as $index => $field){
+
+        $message .= '<strong>' . $index . '</strong>: ' . $field . '<br/>';
+    }
+
+    try {
+
+        if(wp_mail($send_to, $subject, $message, $headers)){
+
+            wp_send_json_success('E-post skickat');
+
+        }
+        else {
+
+            wp_send_json_error('E-post fel');
+
+        }
+
+    } catch (Exception $e){
+
+            wp_send_json_error($e-> getMessage());
+    }
+
+    // wp_send_json_success( $formdata['Förnamn'] );
+
+}
 

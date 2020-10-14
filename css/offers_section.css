@@ -33,7 +33,6 @@
     text-align: center;
 }
 
-
 .offers-box:hover {
     box-shadow: 3px 4px thistle;
     animation-name: breathe_in_offers;

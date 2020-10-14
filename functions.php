@@ -87,7 +87,7 @@ function contact_form(){
     $send_to = $admin_email;
 
     //Subject
-    $subject = 'Meddelande från ' . $formdata['Förnamn'] . '' . $formdata['Efternamn'];
+    $subject = 'Meddelande från ' . $formdata['Förnamn'] . ' ' . $formdata['Efternamn'];
 
     //Message
     $message = '';
@@ -115,7 +115,6 @@ function contact_form(){
             wp_send_json_error($e-> getMessage());
     }
 
-    // wp_send_json_success( $formdata['Förnamn'] );
 
 }
 

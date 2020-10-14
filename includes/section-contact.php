@@ -1,3 +1,8 @@
+
+<div class="row" id="message-box">
+    <div id="success_message" class="alert alert-success col-md-12" style="display:none"></div>
+</div>
+
 <form id="contact">
 
     <h2>Kontakta mig!</h2>
@@ -34,7 +39,7 @@
 
     <div class="form-group">
 
-        <button type="submit" class="btn btn-success">Skicka din fråga</button>
+        <button type="submit" class="btn btn-success btn-block">Skicka din fråga</button>
 
     </div>
  
@@ -66,7 +71,13 @@
 
             success: function(res){
 
-                $('#contact').fadeOut(200);
+                $('#contact').fadeOut(300);
+
+                $('#success_message').text('Tack för ditt meddelande').show();
+
+                $('#contact').trigger('reset');
+
+                $('#contact').fadeIn(500);
 
             },
 

@@ -3,7 +3,7 @@
 //Load style sheets
 function load_css(){
 
-    wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');
+    wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap/bootstrap.min.css', array(), false, 'all');
     wp_enqueue_style('bootstrap');
 
     wp_register_style('main', get_template_directory_uri() . '/css/main.css', array(), false, 'all');
@@ -24,6 +24,9 @@ function load_css(){
     wp_register_style('contact_section', get_template_directory_uri() . '/css/contact_section.css', array(), false, 'all');
     wp_enqueue_style('contact_section');
 
+    wp_register_style('my_services', get_template_directory_uri() . '/css/my_services.css', array(), false, 'all');
+    wp_enqueue_style('my_services');
+
 }
 add_action('wp_enqueue_scripts','load_css');
 
@@ -32,7 +35,7 @@ function load_js(){
 
     wp_enqueue_script('jquery');
 
-    wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery', false, true);
+    wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap/bootstrap.min.js', 'jquery', false, true);
     wp_enqueue_script('bootstrap');
 
     wp_register_script('greensock', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js', array(), false, true);
@@ -64,6 +67,7 @@ add_image_size('hero-image-shallow', 1920, 800, true);
 add_image_size('hero-image-new', 2048, 800, true);
 add_image_size('icon-image', 60, 60, true);
 add_image_size('offers-image', 300, 150, true);
+add_image_size('miniature-image', 225, 150, true);
 
 //Contact form
 add_action('wp_ajax_contact', 'contact_form');

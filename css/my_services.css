@@ -1,0 +1,30 @@
+
+#my-services-container {
+    position: absolute;
+    top: 75px;
+}
+
+#miniatures-container {
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ #miniatures-container img {
+    border-radius: 5%;
+}
+
+#my-services-intro-container {
+    margin-top: 2%; 
+}
+
+#miniature-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#miniature-box p {
+    text-align: center;
+}
+
+

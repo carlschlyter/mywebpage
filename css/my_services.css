@@ -17,14 +17,24 @@
     margin-top: 2%; 
 }
 
-#miniature-box {
+.miniature-box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-#miniature-box p {
+.miniature-box p {
     text-align: center;
 }
+
+.miniature-box:hover {
+    animation-name: breathe_miniatures;
+    animation-duration: 1s;
+    }
+
+
+
+
+
 
 

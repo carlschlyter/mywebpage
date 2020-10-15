@@ -13,8 +13,8 @@ timeline.staggerFrom('.text-box', 2, {delay: 2, duration: 3, opacity:0, y:100, s
 //Test
 let minibox = new TimelineLite();
 
-minibox.staggerFrom("#miniature-box", 1, {delay: .5, duration: 3, opacity: 0, y: 20, scale: .1, ease: "back"}, .4, .2);
+minibox.staggerFrom(".miniature-box", 1, {delay: .5, duration: 3, opacity: 0, y: 20, scale: .1, ease: "back"}, .4, .2);
 
-//Vanilla js animation on miniatures on My Service page
-const minbox2 = document.querySelector('#h1-test'); 
+
+
 

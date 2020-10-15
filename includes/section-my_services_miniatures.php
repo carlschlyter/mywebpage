@@ -14,7 +14,7 @@
             $label = $miniature['label'];
         ?>
 
-            <div id="miniature-box">
+            <div class="miniature-box">
                 
                 <div>
                     <img src="<?php echo $img['sizes']['miniature-image']; ?>" alt="">

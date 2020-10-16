@@ -7,6 +7,7 @@
 #miniatures-container {
     display: flex;
     justify-content: space-evenly;
+    border-bottom: 1px lightgray solid;
  }
 
  #miniatures-container img {
@@ -14,7 +15,12 @@
 }
 
 #my-services-intro-container {
-    margin-top: 2%; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 3%; 
+    border: 1px lightgray solid;
+    margin-top: 0.5%;
 }
 
 .miniature-box {
@@ -29,8 +35,51 @@
 
 .miniature-box:hover {
     animation-name: breathe_miniatures;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     }
+
+#my-services-imgtxt-container {
+    border: 1px lightgray solid;
+    margin-top: 0.5%;
+}
+
+.imgtxt-box {
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;
+    padding: 2%;
+    border-bottom: 1px lightgray solid;
+}
+
+.imgtxt-img-box {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.imgtxt-img-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2%;
+}
+
+@media screen and (min-width: 1024px){
+
+    .imgtxt-img-box img:hover {
+        animation: breathe_in_shadow 2s forwards;
+    }
+
+    .imgtxt-img-box img {
+        animation: breathe_out_shadow 2s forwards;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    #miniatures-container {
+        display: none;
+    } 
+    
+}
 
 
 

@@ -14,7 +14,7 @@ body {
 }
 
 body p {
-    font-size: min(max(1rem, 4vw), 12px);
+    font-size: min(max(0.5rem, 4vw), 16px);
 }
 
 .main-content {
@@ -127,6 +127,36 @@ body p {
 
     100% {
         transform: scale(1.0);
+    }
+
+}
+
+@keyframes breathe_in_shadow {
+
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+            transform: scale(1.1);
+            box-shadow: 10px 10px grey;
+    }
+
+    /* 100% {
+        transform: scale(1.0);
+    } */
+
+}
+
+@keyframes breathe_out_shadow {
+
+    0% {
+        transform: scale(1.1);
+        box-shadow: 10px 10px grey;
+    }
+
+    100% {
+            transform: scale(1.0);
     }
 
 }

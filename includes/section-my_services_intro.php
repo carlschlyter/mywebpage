@@ -9,12 +9,12 @@
         
     ?>
 
-        <div id="intro-box row">
+        <div id="intro-box" class="row">
             
             <div class="col-md-12">
 
                 <h1 id="h1-test"> <?php echo $header ?> </h1>
-                <h4> <?php echo $intro ?> </h4>
+                <p> <?php echo $intro ?> </p>
 
             </div>   
 

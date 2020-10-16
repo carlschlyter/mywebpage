@@ -68,6 +68,7 @@ add_image_size('hero-image-new', 2048, 800, true);
 add_image_size('icon-image', 60, 60, true);
 add_image_size('offers-image', 300, 150, true);
 add_image_size('miniature-image', 225, 150, true);
+add_image_size('imgtxt-section-image', 375, 250, true);
 
 //Contact form
 add_action('wp_ajax_contact', 'contact_form');

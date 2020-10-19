@@ -12,14 +12,21 @@
             
             $img = $miniature['service_miniature'];
             $label = $miniature['label'];
+            $link = $miniature['link'];
         ?>
 
             <div class="miniature-box">
                 
-                <div>
-                    <img src="<?php echo $img['sizes']['miniature-image']; ?>" alt="">
-                    <p> <?php echo $label; ?> </p>
-               </div>
+                <a href=" <?php echo $link; ?> ">
+                
+                    <div>
+                        
+                        <img src="<?php echo $img['sizes']['miniature-image']; ?>" alt="">
+                        <p> <?php echo $label; ?> </p>
+               
+                    </div>
+
+               </a>
 
             </div>
 

@@ -27,6 +27,9 @@ function load_css(){
     wp_register_style('my_services', get_template_directory_uri() . '/css/my_services.css', array(), false, 'all');
     wp_enqueue_style('my_services');
 
+    wp_register_style('service_pages', get_template_directory_uri() . '/css/service_pages.css', array(), false, 'all');
+    wp_enqueue_style('service_pages');
+
 }
 add_action('wp_enqueue_scripts','load_css');
 

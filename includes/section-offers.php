@@ -8,17 +8,24 @@
          
     ?>
 
-        <?php foreach($offers as $offer) : ?>
+        <?php foreach($offers as $offer) : 
+            
+        $link = $offer['link'];
+            
+        ?>
 
             <div class="offers-box">
 
-                <div class="image-box">
-                    <img src="<?php echo $offer['image']['sizes']['offers-image']; ?>" alt="">
-                </div>
+                <a href="<?php echo $link ?> ">
+                            
+                    <div class="image-box">
+                        <img src="<?php echo $offer['image']['sizes']['offers-image']; ?>" alt="">
+                    </div>
 
-                <h2> <?php echo $offer['title']; ?> </h2>
-                <p> <?php echo $offer['description']; ?> </p>
+                    <h2> <?php echo $offer['title']; ?> </h2>
+                    <p> <?php echo $offer['description']; ?> </p>
 
+                </a>
 
             </div>
 

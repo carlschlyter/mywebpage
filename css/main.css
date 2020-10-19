@@ -96,6 +96,30 @@ body p {
 
 }
 
+@keyframes breathe_in_miniatures {
+
+    from {
+        transform: scale(1.0);
+    }
+
+    to {
+         transform: scale(1.15);
+    }
+
+}
+
+@keyframes breathe_out_miniatures {
+
+    from {
+        transform: scale(1.15);
+    }
+
+    to {
+         transform: scale(1.0);
+    }
+
+}
+
 @keyframes breathe_miniatures {
 
     0% {
@@ -138,7 +162,7 @@ body p {
     }
 
     100% {
-            transform: scale(1.1);
+            transform: scale(1.05);
             box-shadow: 10px 10px grey;
     }
 
@@ -151,7 +175,7 @@ body p {
 @keyframes breathe_out_shadow {
 
     0% {
-        transform: scale(1.1);
+        transform: scale(1.05);
         box-shadow: 10px 10px grey;
     }
 

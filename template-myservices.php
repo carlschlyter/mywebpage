@@ -30,7 +30,7 @@ Template Name: My Services
 
     <div class="row">
 
-        <div class="col-md-12" id="my-services-imgtxt-container">
+        <div class="col-md-12" class="my-services-imgtxt-container">
 
             <?php get_template_part('includes/section', 'my_services_imgtxt'); ?>
 

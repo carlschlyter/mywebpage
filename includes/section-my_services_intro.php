@@ -9,16 +9,8 @@
         
     ?>
 
-        <div class="intro-box" class="row">
-            
-            <div class="col-md-12">
-
-                <h1 id="h1-test"> <?php echo $header ?> </h1>
-                <p> <?php echo $intro ?> </p>
-
-            </div>   
-
-        </div>
+        <h1 id="h1-test"> <?php echo $header ?> </h1>
+        <p> <?php echo $intro ?> </p>
 
     <?php endif; ?>
 

@@ -20,12 +20,14 @@
 
 #my-services-intro-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center; 
     padding: 3%; 
     border: 1px lightgray solid;
     margin-top: 0.5%;
+    flex-wrap: wrap;
 }
+
 
 .miniature-box {
     display: flex;

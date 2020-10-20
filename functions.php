@@ -30,6 +30,12 @@ function load_css(){
     wp_register_style('service_pages', get_template_directory_uri() . '/css/service_pages.css', array(), false, 'all');
     wp_enqueue_style('service_pages');
 
+    wp_register_style('contact_page', get_template_directory_uri() . '/css/contact_page.css', array(), false, 'all');
+    wp_enqueue_style('contact_page');
+
+    wp_register_style('aboutme_page', get_template_directory_uri() . '/css/aboutme_page.css', array(), false, 'all');
+    wp_enqueue_style('aboutme_page');
+
 }
 add_action('wp_enqueue_scripts','load_css');
 

@@ -8,31 +8,25 @@ Template Name: Contact Me
 
 <div class="container-fluid">
 
-    <div class="row">
+    <div class="row" id="contact-page-intro">
 
-        <div class="col-md-12">
+        <div class="col-md-12" id="contact-page-intro-container">
 
-            <h1> <?php the_title(); ?> </h1>    
+            <?php get_template_part('includes/section', 'contact_page_intro'); ?>
 
         </div>
 
     </div>
 
-    <div class="row">
+    <div class="row" id="contact-page-form">
 
-        <div class="col-md-6">
+        <div class="col-md-12" id="contact-page-container">
 
-            <?php get_template_part('includes/section', 'content'); ?>
+            <?php get_template_part('includes/section', 'contact'); ?>
 
-        </div>        
+        </div>
 
-        <div class="col-md-6">
-
-            <p>Det här är den andra sidan</p>            
-
-        </div>        
-
-    </div>    
+    </div>
 
 </div>    
 

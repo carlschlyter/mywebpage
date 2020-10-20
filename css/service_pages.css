@@ -1,16 +1,21 @@
 
 
+#service-pages-container {
+    padding-top: 2rem;
+}
+
 #service-pages-container h1 {
     font-size: min(max(2rem, 4vw), 4rem);
 }
 
 #service-pages-intro-container {
-    padding-top: 6rem;
+    margin-top: 0.5%;
+    padding: 3rem;
 }
-
 
 #service-pages-imgtxt-container {
     border: 1px lightgray solid;
     margin-top: 0.5%;
 }
+
 

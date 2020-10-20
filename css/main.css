@@ -222,6 +222,22 @@ body p {
 
 }
 
+ul .sub-menu {
+    text-decoration: none;
+    list-style: none;
+    font-size: 0.8rem;
+} 
+
+ul .sub-menu a {
+    color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+    ul .sub-menu {
+        display: none;
+    }
+}
+
 
 
 

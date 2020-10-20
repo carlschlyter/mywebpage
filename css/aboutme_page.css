@@ -1,0 +1,74 @@
+#about-me-page-container {
+    padding-top: 2rem;
+}
+
+#about-me-page-container h1 {
+    font-size: min(max(2rem, 4vw), 4rem);
+}
+
+/* #about-me-page-intro-container {
+    margin-top: 0.5%;
+    padding: 3rem;
+} */
+
+#about-me-page-imgtxt-container {
+    /* border: 1px lightgray solid; */
+    margin-top: 0.5%;
+}
+
+.about-me-imgtxt-box {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 2%;
+    border-bottom: 1px lightgray solid;
+}
+
+/* .about-me-imgtxt-img-box {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+} */
+
+.about-me-imgtxt-img-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2%;
+}
+
+.about-me-imgtxt-img-box,
+.about-me-imgtxt-txt-box {
+    padding-top: 2%; 
+}
+
+@media screen and ( min-width: 822px) {
+    .about-me-imgtxt-img-box{
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-me-imgtxt-img-box > img {
+        margin-left: 0px;        
+    }   
+}
+
+@media screen and (min-width: 1024px){
+
+    /* .imgtxt-img-box img:hover {
+        animation: breathe_in_shadow 2s forwards;
+    }
+
+    .imgtxt-img-box img {
+        animation: breathe_out_shadow 2s forwards;
+    } */
+
+/* Child method to make img breathe when hovering text. */
+    /* .about-me-imgtxt-box:hover .about-me-imgtxt-img-box img {
+        animation: breathe_in_shadow 2s forwards;
+    } */
+
+    .about-me-imgtxt-img-box > img {
+        animation: breathe_out_shadow 2s forwards;
+    }
+
+}

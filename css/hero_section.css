@@ -30,9 +30,15 @@
     margin-top: 3%;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 405px) {
     #welcome-message {
-        top: 45%;
+        top: 47%;
+    }   
+}
+
+@media screen and (max-width: 321px) {
+    #welcome-message {
+        top: 50%;
     }   
 }
 

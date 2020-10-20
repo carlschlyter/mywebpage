@@ -6,35 +6,28 @@ Template Name: About Me
 
 <?php get_header(); ?>
 
-<div class="container-fluid">
+<div class="container-fluid" id="about-me-page-container">
 
     <div class="row">
 
-        <div class="col-md-12">
-
-            <h1> <?php the_title(); ?> </h1>    
-
-        </div>
-    
-    </div>
-    
-    <div class="row">
-
-        <div class="col-md-6">
-    
-            <?php get_template_part('includes/section', 'content'); ?>
-
-        </div>        
-
-        <div class="col-md-6">
+        <div class="col-md-12" id="about-me-page-intro-container">
         
-            <p>Det här är den andra sidan</p>            
+            <?php get_template_part('includes/section', 'about_me_page_intro'); ?>
+
+        </div>        
+        
+    </div>
+
+    <div class="row">
+
+        <div class="col-xl-12" id="about-me-page-imgtxt-container">
+
+            <?php get_template_part('includes/section', 'about_me_page_imgtxt'); ?>
 
         </div>        
 
-    </div>    
+    </div>
 
 </div>    
 
 <?php get_footer(); ?>
-

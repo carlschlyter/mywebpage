@@ -23,7 +23,7 @@
     justify-content: left;
     align-items: center; 
     padding: 3%; 
-    border: 1px lightgray solid;
+    /* border: 1px lightgray solid; */
     margin-top: 0.5%;
     flex-wrap: wrap;
 }
@@ -80,24 +80,25 @@
     border-radius: 2%;
 }
 
+
 @media screen and (min-width: 1024px){
 
-    .imgtxt-img-box img:hover {
+    /* .imgtxt-img-box img:hover {
         animation: breathe_in_shadow 2s forwards;
     }
 
     .imgtxt-img-box img {
         animation: breathe_out_shadow 2s forwards;
-    }
+    } */
 
-    /* .imgtxt-txt-box:hover ~ .imgtxt-img-box > img {
+/* Child method to make img breathe when hovering text. */
+    .imgtxt-box:hover .imgtxt-img-box img {
         animation: breathe_in_shadow 2s forwards;
     }
 
     .imgtxt-img-box > img {
         animation: breathe_out_shadow 2s forwards;
-    } */
-
+    }
 }
 
 
@@ -107,6 +108,9 @@
         display: none;
     } 
     
+    #my-services-intro-container {
+        border-bottom: 1px lightgray solid;
+    }
 }
 
 

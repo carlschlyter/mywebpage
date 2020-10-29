@@ -10,12 +10,16 @@
 
 #service-pages-intro-container {
     margin-top: 0.5%;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 #service-pages-imgtxt-container {
     border: 1px lightgray solid;
     margin-top: 0.5%;
+}
+
+.imgtxt-txt-box {
+    padding-top: 1%;
 }
 
 

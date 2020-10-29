@@ -99,6 +99,11 @@
     .imgtxt-img-box > img {
         animation: breathe_out_shadow 2s forwards;
     }
+
+    #my-services-intro-container {
+        border-bottom: 1px lightgray solid;
+    }
+
 }
 
 
@@ -110,6 +115,7 @@
     
     #my-services-intro-container {
         border-bottom: 1px lightgray solid;
+        padding: 5%;
     }
 }
 

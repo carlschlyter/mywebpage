@@ -22,7 +22,7 @@
                 <div class="row imgtxt-box">
                     
                     <div class="col-md-6 imgtxt-img-box">
-                        <img src="<?php echo $img['sizes']['imgtxt-section-image']; ?>" alt="">
+                        <img src="<?php echo $img['sizes']['imgtxt-section-image-2']; ?>" alt="">
                     </div>
 
                     <div class="col-md-6 imgtxt-txt-box">
@@ -42,7 +42,7 @@
                     </div>
 
                     <div class="col-md-6 imgtxt-img-box">
-                        <img src="<?php echo $img['sizes']['imgtxt-section-image']; ?>" alt="">
+                        <img src="<?php echo $img['sizes']['imgtxt-section-image-2']; ?>" alt="">
                     </div>
 
                 </div>

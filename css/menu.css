@@ -139,6 +139,10 @@
     transition: color 0.4s ease;
 }
 
+#menu-item-63:hover .sub-menu {
+    display: list-item;    
+    transition: all 0.4 ease;
+}
 
 
 /*

@@ -5,7 +5,7 @@
     <?php if(get_row_layout() == 'hero_image_section'): 
         
         $img = get_sub_field('image');
-        $pic = $img['sizes']['hero-image-shallow'];
+        $pic = $img['sizes']['hero-image-max'];
         $msg = get_sub_field('welcome_message');
         $txt = get_sub_field('welcome_text');
         $txt2 = get_sub_field('welcome_text_2');

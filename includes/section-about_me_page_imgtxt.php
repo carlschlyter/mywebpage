@@ -5,7 +5,7 @@
     <?php if(get_row_layout() == 'image_and_text_section'): 
         
     $imgstxts = get_sub_field('image_and_text'); 
-        
+
     ?>
 
         <?php foreach($imgstxts as $imgtxt) : 
@@ -22,7 +22,7 @@
                 <div class="row about-me-imgtxt-box">
                     
                     <div class="col-xl-6 about-me-imgtxt-img-box">
-                        <img src="<?php echo $img['sizes']['medium_large']; ?>" alt="">
+                        <img src="<?php echo $img['sizes']['about-page-image']; ?>" alt="">
                     </div>
 
                     <div class="col-xl-6 about-me-imgtxt-txt-box">

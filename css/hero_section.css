@@ -1,6 +1,8 @@
 
 #hero-container {
     padding: 0;
+    display:flex;
+    justify-content: center;
 }
 
 #hero-sub-container {
@@ -8,6 +10,7 @@
     width: screen;
     display: flex;
     justify-content: center;
+    margin-bottom: 0.2%;
 }
 
 #hero-sub-container-img {

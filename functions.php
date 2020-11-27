@@ -36,6 +36,9 @@ function load_css(){
     wp_register_style('aboutme_page', get_template_directory_uri() . '/css/aboutme_page.css', array(), false, 'all');
     wp_enqueue_style('aboutme_page');
 
+    wp_register_style('themaking', get_template_directory_uri() . '/css/themaking.css', array(), false, 'all');
+    wp_enqueue_style('themaking');
+
 }
 add_action('wp_enqueue_scripts','load_css');
 

@@ -14,7 +14,7 @@ let minibox = new TimelineLite();
 
 minibox.staggerFrom(".miniature-box", 1, {delay: .2, duration: 3, opacity: 0, y: 20, scale: .1, ease: "back"}, .4, .2);
 
-//Test
+
 
 
 

@@ -37,6 +37,12 @@
     margin-top: 3%;
 }
 
+/*Blurry background on welcome text to make it be better seen
+/* .text-box {
+    background-color: rgba(128,128,128, 0.5);
+    box-shadow: 0 0 10px 10px rgba(128,128,128, 0.5);
+} */
+
 @media screen and (max-width: 405px) {
     #welcome-message {
         top: 47%;

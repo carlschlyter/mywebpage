@@ -6,6 +6,16 @@
     <title>Carl Schlyter Webbutveckling</title>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GL4PPBB2XV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GL4PPBB2XV');
+</script>
+
 <?php wp_head(); ?>
 
 </head>
